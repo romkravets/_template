@@ -62,7 +62,12 @@ button {
    &_accent {
       background: $bg-accennt-color;
       padding: 100px 0 70px 0;
-   }
+	}
+	&_footer {
+		background-image: url('../img/footer-bg.png');
+		background-position: 50% 50%;
+		width: 100%;
+	}
 }
 
 .section-title-container {
@@ -85,8 +90,8 @@ button {
    font-size: 15px;
 }
 
-.card-services {
-   background: $white-color;
+.card-base {
+	background: $white-color;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -107,6 +112,9 @@ button {
    &_space {
       padding-top: 116px;
 	}
+}
+
+.card-services {
 	&:hover {
 		background:#00897B;
 		color: $white-color;
@@ -131,9 +139,6 @@ button {
 	width: 70px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	// &:hover {
-	// 	background-image: url('../img/phone-icon-hover.png');
-	// }
 }
 
 .btn {
@@ -145,13 +150,14 @@ button {
    font-weight: $font-semibold;
 	color: $base-color;
 	cursor: pointer;
-	// &:hover {
-	// 	background:#00897B;
-	// 	color: $white-color;
-	// 	border-color: $white-color;
-		
-	// }
 }
+
+.social-block {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
 
 
 
