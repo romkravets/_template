@@ -97,7 +97,7 @@
 					<h1 class="section-title">Our Services</h1>
 					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 				</div>
-				 <div class="row">
+				 <div class="row card-base_space">
 					<!-- <div class="owl-carousel owl-theme"> -->
 							<div class="col-lg-4">
 								<div class=" mb-4">
@@ -114,8 +114,6 @@
 								 </div>
 								</div>
 							 </div>
-						
-					
 							<div class="col-lg-4">
 								<div class=" mb-4">
 								 <div class="card-base">
@@ -131,8 +129,6 @@
 								 </div>
 								</div>
 							 </div>
-						
-						
 							<div class="col-lg-4">
 								<div class=" mb-4">
 								 <div class="card-base">
@@ -148,9 +144,7 @@
 								 </div>
 								</div>
 							 </div>
-						<!-- </div> -->
-					
-				 
+							<!-- </div> -->
 			 </div>
 		</section>
 	</main>
@@ -160,23 +154,42 @@
 				<h1 class="section-title">Our Services</h1>
 				<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 			</div>
-			 <div class="row">
-				<div class="location">
-					1
+			<div class="location">
+				<div  class="location__item">
+					<img  class="location__item-img" src="./img/address.png" alt="">
+					<address>
+						<div><a class="location__item-link" href="#">Nobinagar savar, Dhaka<br> Bangladesh</a></div>
+					</address>
 				</div>
-				<form>
+				<div class="location__item">
+					<img class="location__item-img"  src="./img/phone.png" alt="">
+					<div><a class="location__item-link" href="tel:+8801743331996">+8801743331996</a></div>
+						<div><a class="location__item-link" href="tel:+8801743331996">+8801743331996</a></div>
+				</div>
+				<div class="location__item">
+					<img  class="location__item-img" src="./img/mail.png" alt="">
+					<div><a  class="location__item-link" href="mailto:quickmasud@gmail.com">quickmasud@gmail.com</a></div>
+					<div><a class="location__item-link" href="mailto:quickmasud@gmail.com">quickmasud@yahoo.com</a></div>
+				</div>
+			</div>
+			 <div class="row">
+				<form class="form-contact">
 					<div class="row">
-					  <div class="col">
-						 <input type="text" class="form-control" placeholder="First name" required>
+					  <div class="col-5 form-contact__input_space">
+						 <input class="form-contact__input" type="text" class="form-control" placeholder="Your NAME" required>
 					  </div>
-					  <div class="col">
-						 <input type="text" class="form-control" placeholder="Last name">
+					  <div class="col-5">
+						 <input class="form-contact__input" type="text" class="form-control" placeholder="Your Email">
 					  </div>
-					  <div class="col">
-					  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
+					<div class="row">
+						<div class="col-12">
+							<textarea class="form-control form-contact__textarea"rows="4" placeholder="Write Massage"></textarea>
+						 </div>
 					</div>
+					<button>Send</button>
 				 </form>
+				 
 			 </div>
 			 <div class="copyright">All rights Reserved © 2017</div>
 		 </div>

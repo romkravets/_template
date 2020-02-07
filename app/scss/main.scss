@@ -63,15 +63,20 @@ button {
       background: $bg-accennt-color;
       padding: 100px 0 70px 0;
 	}
+	&_team {
+		padding: 132px 0 70px 0;
+	}
 	&_footer {
 		background-image: url('../img/footer-bg.png');
 		background-position: 50% 50%;
 		width: 100%;
+		color: $white-color;
+		padding: 100px 0 70px 0;
 	}
 }
 
 .section-title-container {
-   max-width: 40rem;
+   max-width: 35rem;
    text-align: center;
    margin: 0 auto;
 }
@@ -156,6 +161,52 @@ button {
 	display: flex;
 	width: 100%;
 	justify-content: space-evenly;
+}
+
+.location {
+	display: flex;
+	text-align: center;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3rem 0;
+	&__item {
+		padding: 0 1rem;
+		text-align: center;
+		font-weight: $font-semibold;
+	}
+	&__item-img {
+		max-width: 103px;
+		max-height: 103px;
+		margin: 0 auto;
+		padding-bottom: 1rem;
+	}
+	&__item-link {
+		text-decoration: none;
+		color: $white-color;
+		&:hover{
+			color: $white-color;
+			text-decoration: none;
+		}
+	}
+}
+
+.form-contact {
+	margin: 0 auto;
+	min-width: 600px;
+	&__input {
+		background: $white-color;
+		border: none;
+		border-radius: 5px;
+		padding: 1rem;
+		min-width: 400px;
+		&_space {
+			margin-right: 3rem;
+			margin-bottom: 3rem;
+		}
+	}
+	&__textarea {
+		max-width: 810px;
+	}
 }
 
 
