@@ -61,7 +61,7 @@ button {
     z-index: 2;
    &_accent {
       background: $bg-accennt-color;
-      padding: 174px 0 125px 0;
+      padding: 100px 0 70px 0;
    }
 }
 
@@ -75,7 +75,8 @@ button {
    font-size: 30px;
    font-weight: bold;
    display: flex;
-   justify-content: center;
+	justify-content: center;
+	padding-bottom: 1rem;
 }
 
 .description {
@@ -89,7 +90,8 @@ button {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 58px 35px;
+	padding: 58px 35px;
+	margin-bottom: 2rem;
    &__title {
       font-size: 20px;
       font-weight: $font-semibold;
@@ -99,22 +101,56 @@ button {
       font-size: 15px;
       font-weight: $font-regular;
       padding-bottom: 50px;
-      text-align: center;
+		text-align: center;
+		line-height: 1.8;
    }
    &_space {
       padding-top: 116px;
-   }
+	}
+	&:hover {
+		background:#00897B;
+		color: $white-color;
+		transition: 0.4s all;
+		.phone-icon {
+			background-image: url('../img/phone-icon-hover.png');
+			transition: 0.4s all;
+		}
+		.btn {
+			background:#00897B;
+			color: $white-color;
+			border-color: $white-color;
+			transition: 0.4s all;
+		}
+	}
 
+}
+
+.phone-icon {
+	background-image: url('../img/phone-icon.png');
+	height: 70px;
+	width: 70px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	// &:hover {
+	// 	background-image: url('../img/phone-icon-hover.png');
+	// }
 }
 
 .btn {
    border: 2px solid $base-color;
    background: $white-color;
-   padding: 10px 20px;
+   padding: 8px 15px;
    text-transform: uppercase;
    font-size: 20px;
    font-weight: $font-semibold;
-   color: $base-color;
+	color: $base-color;
+	cursor: pointer;
+	// &:hover {
+	// 	background:#00897B;
+	// 	color: $white-color;
+	// 	border-color: $white-color;
+		
+	// }
 }
 
 
