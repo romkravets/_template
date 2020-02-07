@@ -2,50 +2,119 @@
 @import "fonts";
 @import "libs";
 
-::placeholder {
-	color: #666;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-::selection {
-	background-color: $accent;
-	color: #fff;
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  font-family: $font-base;
+  color: $base-color;
 }
 
 body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	font-family: $default-font;
-	overflow-x: hidden;
-	color: $text;
-	input, textarea {
-		border: #666 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
-	}
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	&.img-width {
-		width: 100%;
-	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+header,
+nav,
+section,
+footer {
+  margin: 0;
+  padding: 0;
 }
 
-.text-center {
-	text-align: center;
+img {
+  max-width: 100%;
+  display: block;
 }
 
-b, strong {
-	font-weight: bold;
+button {
+  border: none;
+}
+
+.section {
+   width: 100%;
+    min-height: 150px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0 1rem;
+    z-index: 2;
+   &_accent {
+      background: $bg-accennt-color;
+      padding: 174px 0 125px 0;
+   }
+}
+
+.section-title-container {
+   max-width: 40rem;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.section-title {
+   font-size: 30px;
+   font-weight: bold;
+   display: flex;
+   justify-content: center;
+}
+
+.description {
+   text-align: center;
+   font-weight: $font-regular;
+   font-size: 15px;
+}
+
+.card-services {
+   background: $white-color;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 58px 35px;
+   &__title {
+      font-size: 20px;
+      font-weight: $font-semibold;
+      padding: 27px 0 10px 0;
+   }
+   &__text {
+      font-size: 15px;
+      font-weight: $font-regular;
+      padding-bottom: 50px;
+      text-align: center;
+   }
+   &_space {
+      padding-top: 116px;
+   }
+
+}
+
+.btn {
+   border: 2px solid $base-color;
+   background: $white-color;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: $font-semibold;
+   color: $base-color;
 }
 
 
